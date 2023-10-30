@@ -12,7 +12,7 @@ public class MainApp {
         SIZE = 6;
         randomArray(array);
         System.out.println(sumPositiveElement(randomArray(array)));
-        stars(SIZE);
+        stars();
         dioganal(array);
         dioganalSer(array);
         System.out.println(findMax(array));
@@ -44,7 +44,7 @@ public class MainApp {
         return array;
     }
 
-    public static void stars(int size) {
+    public static void stars() {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
 
