@@ -3,16 +3,16 @@ package ru.sbgeu.lichman.basic;
 import java.util.Arrays;
 
 public class MainApp {
-    public static int SIZE;
+    public static int size;
 
 
     public static void main(String[] args) {
 
         int[][] array = new int[10][10];
-        SIZE = 6;
+        size = 6;
         randomArray(array);
         System.out.println(sumPositiveElement(randomArray(array)));
-        stars(SIZE);
+        stars(size);
         dioganal(array);
         dioganalSer(array);
         System.out.println(findMax(array));
@@ -44,9 +44,9 @@ public class MainApp {
         return array;
     }
 
-    public static void stars(int SIZE) {
-        for (int i = 0; i < SIZE; i++) {
-            for (int j = 0; j < SIZE; j++) {
+    public static void stars(int size) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
 
                 System.out.print(" * ");
             }
